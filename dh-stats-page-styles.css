@@ -1,0 +1,99 @@
+body {
+    padding-top: 0em;
+    text-align: center;
+}
+
+section {
+    margin: 0em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+#top-dubhacks-image {
+    position: absolute;
+    left:35px;
+    top:35px;
+    height: 3em;
+
+}
+
+#dh-stats-welcome-section {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.dropdown-toggle-split {
+    padding-left: 3em;
+    padding-right: 3em;
+
+    font-size: 5em;
+}
+
+#year-dropdown {
+    width: 100%;
+    padding: 0em;
+}
+
+.navbar {
+    background-color: #ffffff !important;
+}
+
+#dh-stats-year-dropdown-nav{
+    padding: 0em;
+    background-color: #ffffff !important;
+    z-index: 1000;
+}
+
+#year-dropdown-title-button {
+    padding-left: 1em;
+}
+
+#dh-stats-intro-section {
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+#dh-stats-intro-letter {
+    background-color: #ffffff;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5em;  
+}
+
+.stats-wrapper {
+    padding-top: 7em;
+    padding-bottom: 5em;
+}
+
+.stat-item p {
+    margin-bottom: 2em !important;
+}
+
+.stat-item-inline > h1, .stat-item-inline > h2, .stat-item-inline > h3, .stat-item-inline > h4, .stat-item-inline > h5, .stat-item-inline > h6, .stat-item-inline > p, .stat-item-inline > h2 p {
+    /*
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    */
+    padding-bottom: 0em !important;
+    margin-bottom: 0em !important;
+    line-height: 125px !important;
+    vertical-align: bottom !important;
+}
+
+.general-stats-wrapper {
+
+}
+
+.chart-canvas {
+    margin-right: auto;
+    margin-left: auto;
+
+    margin-top: 7em;
+    margin-bottom: 7em;
+}

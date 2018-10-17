@@ -78,20 +78,38 @@ a:hover, a:target, a:focus {
 }
 
 /*Text*/
+.really-big-title {
+    font-size: 12em;
+    line-height: 200px;
+    font-weight: 700;
+}
+
 .big-title {
-    font-size: 120px;
+    font-size: 9em;
     line-height: 200px;
     font-weight: 700;
 }
 
 .medium-title {
-    font-size: 50px;
+    font-size: 3.5em;
     line-height: 100px;
-    font-weight: 700;
+    font-weight: 800;
+}
+
+.semi-medium-title {
+    font-size: 2.5em !important;
+    line-height: 60px !important;
+    font-weight: 800 !important;
+}
+
+.small-title {
+    font-size: 2em !important;
+    line-height: 60px;
+    font-weight: 600 !important;
 }
 
 .big-paragraph {
-    font-size: 20px;
+    font-size: 1.5em;
     line-height: 30px;
 }
 
@@ -134,7 +152,16 @@ a:hover, a:target, a:focus {
 
 /*Dropdown*/
 
-.dropdown-toggle {
+.dropdown-toggle, .dropdown .btn {
+    background-color: #fff;
+    border-radius: 0px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.dropdown .btn:hover, .dropdown .btn:target, .dropdown .btn:focus, .dropdown .btn:active, .dropdown .btn:active:focus {
     background-color: #fff;
     border-radius: 0px;
     border: none;

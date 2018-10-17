@@ -6,443 +6,187 @@
     <meta property="og:description" content="DubHacks is a 24-hour collegiate hackathon held at the University of Washington in Seattle. We bring together undergraduate students of all backgrounds to inspire individuals to develop creative tools to solve society's biggest issues."
     />
     <meta name="keywords" content="DubHacks, DubHack, UW, University of Washington, Seattle, hackathon, MLH" />
-    <title>DubHacks Fall 2018 - Summary</title>
+    <title>DubHacks - Stats</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela:400%7CSpace+Mono:regular,700%7CWork+Sans:regular,500,600,700">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./dh-bootstrap-styles.css">
+    <link rel="stylesheet" href="./dh-18-styles.css">
+    <link rel="stylesheet" href="./dh-stats-page-styles.css">
 </head>
 
 <body>
-    <nav id="top-navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <section id="dh-stats-welcome-section" class="pink-background white-text">
+        <a href="https://dubhacks.co" target="_blank"><img id="top-dubhacks-image" src="./images/Logo-Large.png" /></a>
+
+        <h1 class="big-title">Our Stats</h1>
+    </section>
+
+    <section id="dh-stats-intro-section" class="dark-purple-background">
         <div class="container">
-            <a class="navbar-brand" href="https://dubhacks.co/"><img src="./images/Logo-Large.png" alt="DUBHACKS" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Volunteer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mentor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" target="_blank" class="d-flex align-content-center button dh-button-one">SIGN IN</a>
-                    </li>
-                </ul>
+            <div id="dh-stats-intro-letter" class="">
+                <p class="big-paragraph">At DubHacks, we believe in {SOMETHING} </p>
 
-                <div class="mlh-badge"><a id="mlh-trust-badge" style="max-width:100px;min-width:60px;position:absolute;right:50px;top:0;width:10%;z-index:10000"
-                        href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2019-season&amp;utm_content=white"
-                        target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg"
-                            alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a></div>
+                <br/>
+
+                <p class="big-paragraph">
+                    In that spirit, we have made our statistics on applications, including demographics, for every DubHacks (starting 2015) available
+                    here.
+                </p>
+
+                <br/>
+
+                <p class="big-paragraph">
+                    We hope this data may provide a better picture of DubHacks and hackathons in general, as well as prompt similar transparency
+                    across the hacker community.
+                </p>
+
+                <br/>
+
+                <p class="big-paragraph pink-text"><i class="far fa-heart"></i> DubHacks</p>
             </div>
         </div>
-    </nav>
 
-    <div id="summary-overview" class="container">
-        <h1 class="title-pink big-title">Summary</h1>
 
-        <br/>
+    </section>
 
-        <p class="big-paragraph">At DubHacks, we believe in {SOMETHING} </p>
+    <div>
+        <nav id="dh-stats-year-dropdown-nav" class="navbar">
+            <div id="year-dropdown" class="btn-group dropdown">
+                <button id="year-dropdown-title-button" type="button" class="btn btn-secondary white-background dark-purple-text"><p
+                        class="semi-medium-title">DubHacks 2018</p></button>
 
-        <p class="big-paragraph">
-            In that spirit, we have made our statistics on applications, including demographics, for all DubHacks (starting from 2015)
-            available here.
-        </p>
+                <button id="year-dropdown-toggle-button" type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split white-text pink-background ml-auto"
+                    id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                    <span class="sr-only medium-title">Toggle Dropdown</span>
+                </button>
 
-        <p class="big-paragraph">
-            We hope this data may provide a better picture of DubHacks and hackathons in general, as well as prompt similar transparency
-            across the hacker community.
-        </p>
-
-        <p class="big-paragraph"><i class="far fa-heart"></i> DubHacks</p>
-
-        <br/>
-        <br/>
-        <br/>
-
-        <div id="year-dropdown" class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Year
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" data-year-stats-id="dh-stats-2015" href="#">2015</a>
-                <a class="dropdown-item" data-year-stats-id="dh-stats-2016" href="#">2016</a>
-                <a class="dropdown-item" data-year-stats-id="dh-stats-2017" href="#">2017</a>
-                <a class="dropdown-item active" data-year-stats-id="dh-stats-2018" href="#">2018</a>
+                <div class="dropdown-menu w-100 white-background dark-purple-text" aria-labelledby="dropdownMenuReference">
+                    <a class="dropdown-item semi-medium-title" data-year-stats-id="dh-stats-2015" href="#">2015</a>
+                    <a class="dropdown-item semi-medium-title" data-year-stats-id="dh-stats-2016" href="#">2016</a>
+                    <a class="dropdown-item semi-medium-title" data-year-stats-id="dh-stats-2017" href="#">2017</a>
+                    <a class="dropdown-item active semi-medium-title" data-year-stats-id="dh-stats-2018" href="#">2018</a>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
 
-    <br/>
+    <div id="dh-stats-2018" class="dh-stats-wrapper">
+        <section class="overview-stats-wrapper stats-wrapper ">
+            <div class="container">
+                <span class="stat-item"><h2 class="really-big-title">2100</h2>
+                    <p class="semi-medium-title stat-annotation">Applicants</p></span>
 
-    <div id="dh-stats-2018" class="container dh-stats-wrapper">
-        <!--
-        <div class="row align-items-center">
-            <div class="col-md-3">
-                <img class="" src="./images/dubhacks-pink.png" />
-            </div>
-            <div class="col-md-8 offset-sm-1">
-                <h2 class="title secondary-title">DubHacks 2018</h2>
-                <p class="paragraph">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-                    ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            </div>
-        </div>
-        -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="stat-item"><h2 class="big-title">60%</h2>
 
-        <h2 class="title secondary-title">DubHacks 2018</h2>
-        <p class="paragraph">{DESCRIPTION}</p>
-
-        <br/>
-        <br/>
-
-        <div>
-            <div class="stats-section">
-                <h3 class="title-pink">General</h3>
-
-                <div class="row stats-row">
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
+                            <p class="semi-medium-title stat-annotation">Total Acceptance Rate</p></span>
                     </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
+                    <div class="col-sm-6">
+                        <span class="stat-item"><h2 class="big-title">60%</h2>
+
+                            <p class="semi-medium-title stat-annotation">UW Acceptance Rate</p></span>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="stats-section">
-                <h3 class="title-pink">Top Schools</h3>
+        <section class="general-stats-wrapper stats-wrapper white-text pink-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="stat-item"><h2 class="big-title">60%</h2>
 
-                <div class="row stats-row">
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
+                            <p class="semi-medium-title stat-annotation">First Gen. College Student</p></span>
                     </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
+                    <div class="col-sm-6">
+                        <span class="stat-item"><h2 class="big-title">60%</h2>
+
+                            <p class="semi-medium-title stat-annotation">Returning Participant</p></span>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="stats-section">
-                <h3 class="title-pink">Demographics</h3>
+        <section class="academic-stats-wrapper stats-wrapper pink-text dark-purple-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="semi-medium-title">Top Schools</h3>
 
-                <div class="row stats-row">
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
+                        <canvas id="2018-top-schools-chart" width="350" height="400" class="chart-canvas"></canvas>
+
                     </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
+                    <div class="col-sm-6">
+                        <h3 class="semi-medium-title">Top Majors</h3>
+
+                        <canvas id="2018-top-majors-chart" width="350" height="400" class="chart-canvas"></canvas>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-    </div>
+        <section class="gender-stats-wrapper stats-wrapper dark-purple-text yellow-background">
+            <div class="container">
+                <h3 class="semi-medium-title">Gender</h3>
 
-    <div id="dh-stats-2017" class="container dh-stats-wrapper">
-        <h2 class="title secondary-title">DubHacks 2017</h2>
-        <p class="paragraph">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-            ipsum Lorem ipsum Lorem ipsum</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4 class="small-title">All Applicants</h4>
 
-        <br/>
-        <br/>
+                        <span class="stat-item"><h2 class="big-title">60%</h2>
 
-        <div>
-            <div class="stats-section">
-                <h3 class="title-pink">General</h3>
+                            <p class="semi-medium-title stat-annotation">Male</p></span>
 
-                <div class="row stats-row">
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
+                        <span class="stat-item"><h2 class="big-title">60%</h2>
+
+                            <p class="semi-medium-title stat-annotation">Female</p></span>
+
+                        <span class="stat-item"><h2 class="big-title">60%</h2>
+
+                            <p class="semi-medium-title stat-annotation">Non-Binary</p></span>
                     </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
+                    <div class="col-sm-6">
+                        <h4 class="small-title">UW Applicants</h4>
+
+                        <span class="stat-item"><h2 class="big-title">60%</h2>
+
+                            <p class="semi-medium-title stat-annotation">Male</p></span>
+
+                        <span class="stat-item"><h2 class="big-title">60%</h2>
+
+                            <p class="semi-medium-title stat-annotation">Female</p></span>
+
+                        <span class="stat-item"><h2 class="big-title">60%</h2>
+
+                            <p class="semi-medium-title stat-annotation">Non-Binary</p></span>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="stats-section">
-                <h3 class="title-pink">Top Schools</h3>
+        <section class="academic-stats-wrapper stats-wrapper white-text violet-background">
+            <div class="container">
+                <h3 class="semi-medium-title">Ethnicity</h3>
 
-                <div class="row stats-row">
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4 class="small-title">All Applicants</h4>
+
+                        <canvas id="all-ethnicity-chart" width="350" height="400" class="chart-canvas white-text"></canvas>
+
                     </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
+                    <div class="col-sm-6">
+                        <h4 class="small-title">UW Applicants</h4>
+
+                        <canvas id="uw-ethnicity-chart" width="350" height="400" class="chart-canvas"></canvas>
                     </div>
                 </div>
             </div>
-
-            <div class="stats-section">
-                <h3 class="title-pink">Demographics</h3>
-
-                <div class="row stats-row">
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="dh-stats-2016" class="container dh-stats-wrapper">
-        <h2 class="title secondary-title">DubHacks 2016</h2>
-        <p class="paragraph">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-            ipsum Lorem ipsum Lorem ipsum</p>
-
-        <br/>
-        <br/>
-
-        <div>
-            <div class="stats-section">
-                <h3 class="title-pink">General</h3>
-
-                <div class="row stats-row">
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="stats-section">
-                <h3 class="title-pink">Top Schools</h3>
-
-                <div class="row stats-row">
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="stats-section">
-                <h3 class="title-pink">Demographics</h3>
-
-                <div class="row stats-row">
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="dh-stats-2015" class="container dh-stats-wrapper">
-        <h2 class="title secondary-title">DubHacks 2015</h2>
-        <p class="paragraph">{DESCRIPTION}</p>
-
-        <br/>
-        <br/>
-
-        <div>
-            <div class="stats-section">
-                <h3 class="title-pink">General</h3>
-
-                <div class="row stats-row">
-                    <div class="col-md-6 stat">
-                        <p class="big-number">1470</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-6 stat">
-                        <p class="big-number">57%</p>
-                        <p class="big-paragraph">Acceptance Rate</p>
-                    </div>
-                </div>
-
-                <div class="row stats-row">
-                    <div class="col-md-6 stat">
-                        <p class="big-number">12.7%</p>
-                        <p class="big-paragraph">Previously Attended</p>
-                    </div>
-                    <div class="col-md-6 stat">
-                        <p class="big-number">87.3%</p>
-                        <p class="big-paragraph">First DubHacks</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="stats-section">
-                <h3 class="title-pink">Top Schools</h3>
-
-                <div class="row stats-row">
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">1700</p>
-                        <p class="big-paragraph">Applicants</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="stats-section">
-                <h3 class="title-pink">Class</h3>
-
-                <div class="row stats-row">
-                    <div class="col-md-3 stat">
-                        <p class="big-number">17%</p>
-                        <p class="big-paragraph">Freshman</p>
-                    </div>
-                    <div class="col-md-3 stat">
-                        <p class="big-number">22%</p>
-                        <p class="big-paragraph">Sophmore</p>
-                    </div>
-                    <div class="col-md-3 stat">
-                        <p class="big-number">32%</p>
-                        <p class="big-paragraph">Junior</p>
-                    </div>
-                    <div class="col-md-3 stat">
-                        <p class="big-number">27%</p>
-                        <p class="big-paragraph">Senior</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="stats-section">
-                <h3 class="title-pink">Gender</h3>
-
-                <div class="row stats-row">
-                    <div class="col-md-4 stat">
-                        <p class="big-number">21.9%</p>
-                        <p class="big-paragraph">Female</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">75.5%</p>
-                        <p class="big-paragraph">Male</p>
-                    </div>
-                    <div class="col-md-4 stat">
-                        <p class="big-number">0.8%</p>
-                        <p class="big-paragraph">Other</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="stats-section">
-                <h3 class="title-pink">Ethnicity</h3>
-
-                <div class="row stats-row">
-                    <div class="col-md-3 stat">
-                        <p class="big-number">##%</p>
-                        <p class="big-paragraph">--</p>
-                    </div>
-                    <div class="col-md-3 stat">
-                        <p class="big-number">##%</p>
-                        <p class="big-paragraph">--</p>
-                    </div>
-                    <div class="col-md-3 stat">
-                        <p class="big-number">##%</p>
-                        <p class="big-paragraph">--</p>
-                    </div>
-                    <div class="col-md-3 stat">
-                        <p class="big-number">##%</p>
-                        <p class="big-paragraph">--</p>
-                    </div>
-                </div>
-
-                <div class="row stats-row">
-                    <div class="col-md-3 stat">
-                        <p class="big-number">##%</p>
-                        <p class="big-paragraph">--</p>
-                    </div>
-                    <div class="col-md-3 stat">
-                        <p class="big-number">##%</p>
-                        <p class="big-paragraph">--</p>
-                    </div>
-                    <div class="col-md-3 stat">
-                        <p class="big-number">##%</p>
-                        <p class="big-paragraph">--</p>
-                    </div>
-                    <div class="col-md-3 stat">
-                        <p class="big-number">##%</p>
-                        <p class="big-paragraph">--</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -451,6 +195,9 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
 
     <script>
         $('.dropdown-item').on('click', function (e) {
@@ -469,6 +216,213 @@
             });
 
             e.target.setAttribute('class', e.target.className + ' active');
-        })
+        });
+
+        window.onscroll = function () { stickNavbar() };
+        var navbar = document.getElementById("dh-stats-year-dropdown-nav");
+        var sticky = navbar.offsetTop;
+        function stickNavbar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        } 
+    </script>
+
+    <script>
+        var dh18f_schools_ctx = document.getElementById("2018-top-schools-chart");
+        var dh18_schools_chart = new Chart(dh18f_schools_ctx, {
+            type: 'horizontalBar',
+            data: {
+                labels: ["1st", "2nd", "3rd", "4th", "5th"],
+                datasets: [{
+                    label: '% of Applicants',
+                    data: [12, 19, 3, 5, 2],
+                    backgroundColor: [
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                legend: {
+                    labels: {
+                        fontColor: "white",
+                        fontSize: 18
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            fontColor: "#fff",
+                            beginAtZero: true
+                        }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "#fff"
+                        }
+                    }]
+                }
+            }
+        });
+
+        var dh18f_majors_ctx = document.getElementById("2018-top-majors-chart");
+        var dh18_majors_chart = new Chart(dh18f_majors_ctx, {
+            type: 'horizontalBar',
+            data: {
+                labels: ["1st", "2nd", "3rd", "4th", "5th"],
+                datasets: [{
+                    label: '% of Applicants',
+                    data: [12, 19, 3, 5, 2],
+                    backgroundColor: [
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                legend: {
+                    labels: {
+                        fontColor: "white",
+                        fontSize: 18
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            fontColor: "#fff",
+                            beginAtZero: true
+                        }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "#fff"
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+    <script>
+        var dh18f_all_ethnicity_ctx = document.getElementById("all-ethnicity-chart");
+        var dh18_all_ethnicity_chart = new Chart(dh18f_all_ethnicity_ctx, {
+            type: 'horizontalBar',
+            data: {
+                labels: ["1st", "2nd", "3rd", "4th", "5th"],
+                datasets: [{
+                    label: '% of Applicants',
+                    data: [12, 19, 3, 5, 2],
+                    backgroundColor: [
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                legend: {
+                    labels: {
+                        fontColor: "white",
+                        fontSize: 18
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            fontColor: "#fff",
+                            beginAtZero: true
+                        }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "#fff"
+                        }
+                    }]
+                }
+            }
+        });
+
+        var dh18f_uw_ethnicity_ctx = document.getElementById("uw-ethnicity-chart");
+        var dh18_uw_ethnicity_chart = new Chart(dh18f_uw_ethnicity_ctx, {
+            type: 'horizontalBar',
+            data: {
+                labels: ["1st", "2nd", "3rd", "4th", "5th"],
+                datasets: [{
+                    label: '% of Applicants',
+                    data: [12, 19, 3, 5, 2],
+                    backgroundColor: [
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)',
+                        'rgba(237, 71, 142, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)',
+                        'rgba(237,71,142,1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                legend: {
+                    labels: {
+                        fontColor: "white",
+                        fontSize: 18
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            fontColor: "#fff",
+                            beginAtZero: true
+                        }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "#fff"
+                        }
+                    }]
+                }
+            }
+        });
     </script>
 </body>
