@@ -22,7 +22,6 @@ section {
     left:35px;
     top:35px;
     height: 3em;
-
 }
 
 #dh-stats-welcome-section {
@@ -121,6 +120,21 @@ section {
 }
 
 @media(max-width: 992px) {
+    #dh-stats-intro-letter {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #dh-stats-intro-graphic {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .really-big-title {
+        font-size: 10em;
+        line-height: 180px;
+    }
+
     #dh-stats-welcome-section h1 {
         padding-top: 1em;
         font-size: 5em !important;
