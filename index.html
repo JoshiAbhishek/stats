@@ -71,10 +71,10 @@
                 </button>
 
                 <div class="dropdown-menu w-100 white-background dark-purple-text" aria-labelledby="dropdownMenuReference">
-                    <a class="dropdown-item" data-year="2015" data-year-stats-id="dh-stats-2015" href="#"><h6 class="semi-medium-title">2015</h6></a>
-                    <a class="dropdown-item" data-year="2016" data-year-stats-id="dh-stats-2016" href="#"><h6 class="semi-medium-title">2016</h6></a>
-                    <a class="dropdown-item" data-year="2017" data-year-stats-id="dh-stats-2017" href="#"><h6 class="semi-medium-title">2017</h6></a>
-                    <a class="dropdown-item active" data-year="2018" data-year-stats-id="dh-stats-2018" href="#"><h6 class="semi-medium-title">2018</h6></a>
+                    <a class="dropdown-item" data-year="2015" data-year-stats-id="dh-stats-2015" href="#"><h6 data-year="2015" data-year-stats-id="dh-stats-2015" class="semi-medium-title">2015</h6></a>
+                    <a class="dropdown-item" data-year="2016" data-year-stats-id="dh-stats-2016" href="#"><h6 data-year="2016" data-year-stats-id="dh-stats-2016" class="semi-medium-title">2016</h6></a>
+                    <a class="dropdown-item" data-year="2017" data-year-stats-id="dh-stats-2017" href="#"><h6 data-year="2017" data-year-stats-id="dh-stats-2017" class="semi-medium-title">2017</h6></a>
+                    <a class="dropdown-item active" data-year="2018" data-year-stats-id="dh-stats-2018" href="#"><h6 data-year="2018" data-year-stats-id="dh-stats-2018" class="semi-medium-title">2018</h6></a>
                 </div>
             </div>
         </nav>
@@ -205,7 +205,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 
-
     <script>
         $('.dropdown-item').on('click', function (e) {
             e.preventDefault();
@@ -225,14 +224,6 @@
             else {
                 set2018Data();
             }
-
-            /*
-            $('.dh-stats-wrapper').each(function () {
-                $(this).css('display', 'none');
-            });
-
-            $('#' + id).css('display', 'block');
-            */
 
             $('.dropdown-item').each(function () {
                 $(this).removeClass("active");
@@ -463,7 +454,7 @@
         set2018Data();
 
         function set2018Data() {
-            document.getElementById("year-dropdown-title-button").innerHTML = "<h6 class='semi-medium-title'>DubHacks 2018</h6>";
+            document.getElementById("year-dropdown-title-button").innerHTML = "<h6 data-year='2018' data-year-stats-id='dh-stats-2018' class='semi-medium-title'>DubHacks 2018</h6>";
 
             // General Stats    
 
@@ -515,7 +506,7 @@
         }
 
         function set2017Data() {
-            document.getElementById("year-dropdown-title-button").innerHTML = "<h6 class='semi-medium-title'>DubHacks 2017</h6>";
+            document.getElementById("year-dropdown-title-button").innerHTML = "<h6 data-year='2017' data-year-stats-id='dh-stats-2017' class='semi-medium-title'>DubHacks 2017</h6>";
 
             // General Stats    
 
@@ -567,7 +558,7 @@
         }
 
         function set2016Data() {
-            document.getElementById("year-dropdown-title-button").innerHTML = "<h6 class='semi-medium-title'>DubHacks 2016</h6>";
+            document.getElementById("year-dropdown-title-button").innerHTML = "<h6 data-year='2016' data-year-stats-id='dh-stats-2016' class='semi-medium-title'>DubHacks 2016</h6>";
 
             // General Stats    
 
@@ -619,7 +610,7 @@
         }
 
         function set2015Data() {
-            document.getElementById("year-dropdown-title-button").innerHTML = "<h6 class='semi-medium-title'>DubHacks 2015</h6>";
+            document.getElementById("year-dropdown-title-button").innerHTML = "<h6 data-year='2015' data-year-stats-id='dh-stats-2015' class='semi-medium-title'>DubHacks 2015</h6>";
 
             // General Stats    
 
