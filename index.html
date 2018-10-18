@@ -18,33 +18,41 @@
 </head>
 
 <body>
-    <section id="dh-stats-welcome-section" class="pink-background white-text">
+    <section id="dh-stats-welcome-section" class="white-text">
         <a href="https://dubhacks.co" target="_blank"><img id="top-dubhacks-image" src="./images/Logo-Large.png" /></a>
 
         <h1 class="big-title">Our Stats</h1>
     </section>
 
     <section id="dh-stats-intro-section" class="dark-purple-background">
-        <div class="container">
-            <div id="dh-stats-intro-letter" class="">
-                <p class="big-paragraph">At DubHacks, we value transparency and diversity, and belive both should be honestly discussed and strived for.</p>
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="container">
+                    <div id="dh-stats-intro-letter" class="">
+                        <p class="big-paragraph">At DubHacks, we value transparency and diversity, and belive both should
+                            be honestly discussed and strived for.</p>
 
-                <br/>
+                        <br/>
 
-                <p class="big-paragraph">
-                    In that spirit, we have made our statistics on applications for every DubHacks (starting in 2015) available
-                    here.
-                </p>
+                        <p class="big-paragraph">
+                            In that spirit, we have made our statistics on applications for every DubHacks (starting in 2015) available here.
+                        </p>
 
-                <br/>
+                        <br/>
 
-                <p class="big-paragraph">
-                    We hope this data may provide a better picture of DubHacks and hackathons in general, as well as prompt similar conversations and openness across the hacker community.
-                </p>
+                        <p class="big-paragraph">
+                            We hope this data may provide a better picture of DubHacks and hackathons in general, as well as prompt similar conversations
+                            and openness across the hacker community.
+                        </p>
 
-                <br/>
+                        <br/>
 
-                <p class="big-paragraph pink-text"><i class="far fa-heart"></i> DubHacks</p>
+                        <p class="big-paragraph pink-text"><i class="far fa-heart"></i> DubHacks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5  align-middle">
+                <img id="dh-stats-intro-graphic" class="img-fluid" src="./images/what_suzzallo.svg"/>
             </div>
         </div>
 
@@ -54,8 +62,8 @@
     <div>
         <nav id="dh-stats-year-dropdown-nav" class="navbar">
             <div id="year-dropdown" class="btn-group dropdown">
-                <button id="year-dropdown-title-button" type="button" class="btn btn-secondary white-background dark-purple-text"><p
-                        class="semi-medium-title">DubHacks 2018</p></button>
+                <button id="year-dropdown-title-button" type="button" class="btn btn-secondary white-background dark-purple-text"><h6
+                        class="semi-medium-title">DubHacks 2018</h6></button>
 
                 <button id="year-dropdown-toggle-button" type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split white-text pink-background ml-auto"
                     id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
@@ -63,10 +71,10 @@
                 </button>
 
                 <div class="dropdown-menu w-100 white-background dark-purple-text" aria-labelledby="dropdownMenuReference">
-                    <a class="dropdown-item semi-medium-title" data-year="2015" data-year-stats-id="dh-stats-2015" href="#">2015</a>
-                    <a class="dropdown-item semi-medium-title" data-year="2016" data-year-stats-id="dh-stats-2016" href="#">2016</a>
-                    <a class="dropdown-item semi-medium-title" data-year="2017" data-year-stats-id="dh-stats-2017" href="#">2017</a>
-                    <a class="dropdown-item active semi-medium-title" data-year="2018" data-year-stats-id="dh-stats-2018" href="#">2018</a>
+                    <a class="dropdown-item" data-year="2015" data-year-stats-id="dh-stats-2015" href="#"><h6 class="semi-medium-title">2015</h6></a>
+                    <a class="dropdown-item" data-year="2016" data-year-stats-id="dh-stats-2016" href="#"><h6 class="semi-medium-title">2016</h6></a>
+                    <a class="dropdown-item" data-year="2017" data-year-stats-id="dh-stats-2017" href="#"><h6 class="semi-medium-title">2017</h6></a>
+                    <a class="dropdown-item active" data-year="2018" data-year-stats-id="dh-stats-2018" href="#"><h6 class="semi-medium-title">2018</h6></a>
                 </div>
             </div>
         </nav>
@@ -455,7 +463,7 @@
         set2018Data();
 
         function set2018Data() {
-            document.getElementById("year-dropdown-title-button").innerHTML = "<p class='semi-medium-title'>DubHacks 2018</p>";
+            document.getElementById("year-dropdown-title-button").innerHTML = "<h6 class='semi-medium-title'>DubHacks 2018</h6>";
 
             // General Stats    
 
@@ -507,7 +515,7 @@
         }
 
         function set2017Data() {
-            document.getElementById("year-dropdown-title-button").innerHTML = "<p class='semi-medium-title'>DubHacks 2017</p>";
+            document.getElementById("year-dropdown-title-button").innerHTML = "<h6 class='semi-medium-title'>DubHacks 2017</h6>";
 
             // General Stats    
 
@@ -559,7 +567,7 @@
         }
 
         function set2016Data() {
-            document.getElementById("year-dropdown-title-button").innerHTML = "<p class='semi-medium-title'>DubHacks 2016</p>";
+            document.getElementById("year-dropdown-title-button").innerHTML = "<h6 class='semi-medium-title'>DubHacks 2016</h6>";
 
             // General Stats    
 
@@ -611,7 +619,7 @@
         }
 
         function set2015Data() {
-            document.getElementById("year-dropdown-title-button").innerHTML = "<p class='semi-medium-title'>DubHacks 2015</p>";
+            document.getElementById("year-dropdown-title-button").innerHTML = "<h6 class='semi-medium-title'>DubHacks 2015</h6>";
 
             // General Stats    
 

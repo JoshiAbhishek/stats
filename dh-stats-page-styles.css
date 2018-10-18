@@ -1,6 +1,10 @@
 body {
     padding-top: 0em;
     text-align: center;
+
+    background-image: url("./images/dh15.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 section {
@@ -24,6 +28,8 @@ section {
 #dh-stats-welcome-section {
     padding-top: 12.5%;
     padding-bottom: 12.5%;
+
+    background-color: rgba(237, 71, 142, .8);
 }
 
 .dropdown-toggle-split {
@@ -57,16 +63,28 @@ section {
 }
 
 #dh-stats-intro-section {
-    padding-top: 12.5%;
-    padding-bottom: 12.5%;
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
+}
+
+.row {
+    max-width: 100%;
 }
 
 #dh-stats-intro-letter {
-    background-color: #ffffff;
-    max-width: 80%;
+    color: #ffffff;
+    max-width: 90%;
     margin-right: auto;
     margin-left: auto;
-    padding: 5em;  
+    padding: 2.5em;  
+    padding-top: 4em;
+}
+
+#dh-stats-intro-graphic {
+    max-width: 85%;
+    margin: 0em;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 
 .stats-wrapper {
