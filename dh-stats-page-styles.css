@@ -22,8 +22,8 @@ section {
 }
 
 #dh-stats-welcome-section {
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 12.5%;
+    padding-bottom: 12.5%;
 }
 
 .dropdown-toggle-split {
@@ -52,9 +52,13 @@ section {
     padding-left: 1em;
 }
 
+#year-dropdown-title-button p, h2, h3, h4, h5, h6 {
+    margin-bottom: 0em;
+}
+
 #dh-stats-intro-section {
-    padding-top: 10em;
-    padding-bottom: 10em;
+    padding-top: 12.5%;
+    padding-bottom: 12.5%;
 }
 
 #dh-stats-intro-letter {
