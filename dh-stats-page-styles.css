@@ -131,8 +131,8 @@ section {
     }
 
     .really-big-title {
-        font-size: 10em;
-        line-height: 180px;
+        font-size: 10em !important;
+        line-height: 180px !important;
     }
 
     #dh-stats-welcome-section h1 {
