@@ -81,9 +81,9 @@ section {
 }
 
 #dh-stats-intro-graphic {
-    max-width: 85%;
+    max-width: 82.5%;
     margin: 0em;
-    padding-top: 7%;
+    padding-top: 7.5%;
     padding-bottom: 7%;
 }
 
@@ -118,4 +118,16 @@ section {
 
     margin-top: 7em;
     margin-bottom: 7em;
+}
+
+@media(max-width: 992px) {
+    #dh-stats-welcome-section h1 {
+        padding-top: 1em;
+        font-size: 5em !important;
+        line-height: 120px !important;
+    }
+
+    #year-dropdown-title-button h6 {
+        font-size: 1.5em !important;
+    }
 }
