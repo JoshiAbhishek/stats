@@ -119,6 +119,22 @@ section {
     margin-bottom: 7em;
 }
 
+footer {
+    padding: 5em;
+    padding-bottom: 3em;
+}
+
+footer p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.footer-dubhacks-logo {
+    max-height: 50px;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+    transform-style: preserve-3d;
+}
+
 @media(max-width: 992px) {
     #dh-stats-intro-letter {
         width: 100%;
