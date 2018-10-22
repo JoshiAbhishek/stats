@@ -86,6 +86,10 @@ section {
     padding-bottom: 7%;
 }
 
+#class-stats-title {
+    margin-bottom: 1em;
+}
+
 .stats-wrapper {
     padding-top: 7em;
     padding-bottom: 5em;

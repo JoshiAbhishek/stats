@@ -198,12 +198,43 @@
                 </div>
             </div>
         </section>
+
+        <section class="stats-wrapper white-text dark-purple-background">
+            <div class="container">
+                <h3 id="class-stats-title" class="semi-medium-title pink-text">Class Percentages</h3>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="stat-item"><h2 class="big-title" id="dh-freshman-stat">60%</h2>
+
+                            <p class="semi-medium-title stat-annotation">Freshman</p></span>
+                    </div>
+                    <div class="col-sm-6">
+                        <span class="stat-item"><h2 class="big-title" id="dh-sophomore-stat">60%</h2>
+
+                            <p class="semi-medium-title stat-annotation">Sophomore</p></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="stat-item"><h2 class="big-title" id="dh-junior-stat">60%</h2>
+
+                            <p class="semi-medium-title stat-annotation">Junior</p></span>
+                    </div>
+                    <div class="col-sm-6">
+                        <span class="stat-item"><h2 class="big-title" id="dh-senior-stat">60%</h2>
+
+                            <p class="semi-medium-title stat-annotation">Senior</p></span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer class="white-text dark-purple-background">
         <div class="container">
             <img src="images/dubhacks-pink.png" alt="" class="footer-dubhacks-logo">
-            
+
             <p>Made with <i class="far fa-heart"></i> in Seattle</p>
         </div>
     </footer>
@@ -515,6 +546,16 @@
             dh_uw_ethnicity_chart.data.datasets[0].data = [49, 21, 14, 4, 3, 1, 1, 1, 6];
             dh_uw_ethnicity_chart.data.labels = ["East Asian or Asian-American", "South Asian or Asian-American", "White or Euro-American", "Other", "LatinX or Hispanic-American", "Black, Afro-Caribbean, or African-American", "Middle Eastern or North African", "Hawaiian or Pacific Islander", "Native American or Alaskan Native"];
             dh_uw_ethnicity_chart.update();
+
+            // Class standing
+
+            document.getElementById("dh-freshman-stat").innerHTML = "31%";
+
+            document.getElementById("dh-sophomore-stat").innerHTML = "30%";
+
+            document.getElementById("dh-junior-stat").innerHTML = "23%";
+
+            document.getElementById("dh-senior-stat").innerHTML = "14%";
         }
 
         function set2017Data() {
@@ -567,6 +608,16 @@
             dh_uw_ethnicity_chart.data.datasets[0].data = [42, 22, 24, 4, 3, 1, 1, 2, 0];
             dh_uw_ethnicity_chart.data.labels = ["East Asian or Asian-American", "South Asian or Asian-American", "White or Euro-American", "Other", "LatinX or Hispanic-American", "Black, Afro-Caribbean, or African-American", "Middle Eastern or North African", "Hawaiian or Pacific Islander", "Native American or Alaskan Native"];
             dh_uw_ethnicity_chart.update();
+
+            // Class standing
+
+            document.getElementById("dh-freshman-stat").innerHTML = "30%";
+
+            document.getElementById("dh-sophomore-stat").innerHTML = "32%";
+
+            document.getElementById("dh-junior-stat").innerHTML = "24%";
+
+            document.getElementById("dh-senior-stat").innerHTML = "12%";
         }
 
         function set2016Data() {
@@ -619,6 +670,16 @@
             dh_uw_ethnicity_chart.data.datasets[0].data = [38, 22, 25, 6, 3, 1, 3, 1, 0];
             dh_uw_ethnicity_chart.data.labels = ["East Asian or Asian-American", "South Asian or Asian-American", "White or Euro-American", "Other", "LatinX or Hispanic-American", "Black, Afro-Caribbean, or African-American", "Middle Eastern or North African", "Hawaiian or Pacific Islander", "Native American or Alaskan Native"];
             dh_uw_ethnicity_chart.update();
+
+            // Class standing
+
+            document.getElementById("dh-freshman-stat").innerHTML = "30%";
+
+            document.getElementById("dh-sophomore-stat").innerHTML = "30%";
+
+            document.getElementById("dh-junior-stat").innerHTML = "26%";
+
+            document.getElementById("dh-senior-stat").innerHTML = "10%";
         }
 
         function set2015Data() {
@@ -671,6 +732,16 @@
             dh_uw_ethnicity_chart.data.datasets[0].data = [];
             dh_uw_ethnicity_chart.data.labels = ["East Asian or Asian-American", "South Asian or Asian-American", "White or Euro-American", "Other", "LatinX or Hispanic-American", "Black, Afro-Caribbean, or African-American", "Middle Eastern or North African", "Hawaiian or Pacific Islander", "Native American or Alaskan Native"];
             dh_uw_ethnicity_chart.update();
+
+            // Class standing
+
+            document.getElementById("dh-freshman-stat").innerHTML = "30%";
+
+            document.getElementById("dh-sophomore-stat").innerHTML = "37%";
+
+            document.getElementById("dh-junior-stat").innerHTML = "22%";
+
+            document.getElementById("dh-senior-stat").innerHTML = "11%";
         }
 
     </script>
