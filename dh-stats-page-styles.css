@@ -45,6 +45,8 @@ section {
 
 .navbar {
     background-color: #ffffff !important;
+    width: 100%;
+    max-width: 100%;
 }
 
 #dh-stats-year-dropdown-nav{
