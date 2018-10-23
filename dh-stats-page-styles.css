@@ -45,7 +45,6 @@ section {
 
 .navbar {
     background-color: #ffffff !important;
-    width: 100%;
     max-width: 100%;
 }
 
@@ -53,6 +52,7 @@ section {
     padding: 0em;
     background-color: #ffffff !important;
     z-index: 1000;
+    width: 100% !important;
 }
 
 #year-dropdown-title-button {
